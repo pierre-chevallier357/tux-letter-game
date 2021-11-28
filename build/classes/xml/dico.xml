@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tx:dictionnaire
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:tx='http://myGame/tux'
+    xsi:schemaLocation='http://myGame/tux ../xsd/dico.xsd'>
+
+    <tx:niveau difficulté="1"> <!-- Mot de 3/4 lettres -->
+        <tx:mot>ceci</tx:mot>
+        <tx:mot>est</tx:mot>
+        <tx:mot>mots</tx:mot>
+        <tx:mot>zoo</tx:mot>
+        <tx:mot>ego</tx:mot>
+        <tx:mot>jupe</tx:mot>
+        <tx:mot>tete</tx:mot>
+        <tx:mot>robe</tx:mot>
+        <tx:mot>but</tx:mot>
+    </tx:niveau>
+    <tx:niveau difficulté="2"> <!-- Mot de 5/6 lettres -->
+        <tx:mot>notre</tx:mot>
+        <tx:mot>deja</tx:mot>
+        <tx:mot>option</tx:mot>
+        <tx:mot>simple</tx:mot>
+        <tx:mot>indice</tx:mot>
+        <tx:mot>tapis</tx:mot>
+        <tx:mot>porte</tx:mot>
+        <tx:mot>tarte</tx:mot>
+    </tx:niveau>
+    <tx:niveau difficulté="3"> <!-- Mot de 7/8 lettres -->
+        <tx:mot>favoris</tx:mot>
+        <tx:mot>traduire</tx:mot>
+        <tx:mot>toucher</tx:mot>
+        <tx:mot>tic-tac</tx:mot>
+        <tx:mot>requiem</tx:mot>
+        <tx:mot>clavier</tx:mot>
+        <tx:mot>cerveau</tx:mot>
+    </tx:niveau>
+    <tx:niveau difficulté="4"> <!-- Mot de 9/10 lettres -->
+        <tx:mot>compliquer</tx:mot>
+        <tx:mot>traditionnel</tx:mot>
+        <tx:mot>ordinateur</tx:mot>
+        <tx:mot>television</tx:mot>
+        <tx:mot>radiateur</tx:mot>
+        <tx:mot>telephone</tx:mot>
+    </tx:niveau>
+    <tx:niveau difficulté="5"> <!-- Mot de 11 lettres et plus -->
+        <tx:mot>dictionnaire</tx:mot>
+        <tx:mot>porte-feuille</tx:mot>
+        <tx:mot>recursivite</tx:mot>
+        <tx:mot>entrelacements</tx:mot>
+        <tx:mot>theoriquement</tx:mot>
+    </tx:niveau>
+</tx:dictionnaire>

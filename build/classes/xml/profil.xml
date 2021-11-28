@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+    Document   : save_example.xml.xml
+    Created on : August 31, 2014, 3:31 PM
+    Author     : Johan Sarrazin / Céline Fouard / Nicolas Glade
+    Description:
+        Purpose of the document follows.
+-->
+
+<profils
+    xmlns="http://myGame/tux" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://myGame/tux ../xsd/profil.xsd">
+    
+    <profil>
+        <nom>Emmanuel</nom>
+        <avatar>https://upload.wikimedia.org/wikipedia/commons/f/f4/Emmanuel_Macron_in_2019.jpg</avatar>
+        <anniversaire>1977-12-21</anniversaire>
+        <parties>
+            <partie date="2013-12-10">
+                <temps>20.0</temps>
+                <niveau difficulté="1">
+                    <mot>zoo</mot>
+                </niveau>
+            </partie>
+            <partie date="2013-12-11" trouvé="75%">
+                <niveau difficulté="2">
+                    <mot>indice</mot>
+                </niveau>
+            </partie>
+            <partie date="2013-12-11">
+                <temps>30.0</temps>
+                <niveau difficulté="2">
+                    <mot>maman</mot>
+                </niveau>
+            </partie>
+        </parties>
+    </profil>
+    
+    <profil>
+        <nom>Donald</nom>
+        <avatar>https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/946px-Donald_Trump_official_portrait.jpg</avatar>
+        <anniversaire>1946-06-14</anniversaire>
+        <parties>
+            <partie date="2013-12-12">
+                <temps>25.0</temps>
+                <niveau difficulté="1">
+                    <mot>vite</mot>
+                </niveau>
+            </partie>
+            <partie date="2013-12-13" trouvé="50%">
+                <niveau difficulté="2">
+                    <mot>cousin</mot>
+                </niveau>
+            </partie>
+            <partie date="2013-12-13">
+                <temps>40.0</temps>
+                <niveau difficulté="3">
+                    <mot>chapiteau</mot>
+                </niveau>
+            </partie>
+        </parties>
+    </profil>
+</profils>

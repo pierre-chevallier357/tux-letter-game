@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           targetNamespace="http://myGame/tux"
+           xmlns:tx="http://myGame/tux"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="profils" type="tx:Profils"/>
+    
+    <xs:complexType name="Profils">
+        <xs:sequence>
+            <xs:element name="profil" type="tx:Profil"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Profil">
+        <xs:sequence>
+            <xs:element name="nom" type="tx:Nom"/>
+            <xs:element name="avatar" type="tx:Avatar"/>
+            <xs:element name="anniversaire" type="xs:date"/>
+            <xs:element name="parties" type="tx:Parties"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="Nom">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9àáâãäåçèéêëìíîïðòóôõöùúûüýÿ]{3,20}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="Avatar">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9]{1,20}.(jpg|png|gif|jpeg)"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="Parties">
+        <xs:sequence>
+            <xs:element name="partie" type="tx:Partie" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Partie">
+        <xs:sequence>
+            <xs:element name="temps" type="tx:Temps" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="niveau" type="tx:Niveau"/>
+        </xs:sequence>
+        <xs:attribute name="date" type="xs:date"/>
+        <xs:attribute name="trouvé" type="tx:Trouvé"/>
+    </xs:complexType>
+    
+    <xs:complexType name="Niveau">
+        <xs:sequence>
+            <xs:element name="mot" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="difficulté" type="xs:int" use="required"  />
+    </xs:complexType>
+    
+    
+    
+    <xs:simpleType name="Temps">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0.0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="Trouvé">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}%"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
